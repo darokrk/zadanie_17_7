@@ -16,7 +16,7 @@ passport.deserializeUser(function(obj, done) {
 //configuring authorization to Google
 passport.use(new GoogleStrategy({
         clientID: config.GOOGLE_CLIENT_ID,
-        clientSecret:config.GOOGLE_CLIENT_SECRET,
+        clientSecret: config.GOOGLE_CLIENT_SECRET,
         callbackURL: config.CALLBACK_URL
     },
     function(accessToken, refreshToken, profile, cb) {
